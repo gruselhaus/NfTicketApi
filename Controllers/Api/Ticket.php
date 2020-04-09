@@ -77,9 +77,9 @@ class Shopware_Controllers_Api_Ticket extends Shopware_Controllers_Api_Rest
         /** @var \SwagTicketSystem\Models\Ticket\Support $ticket */
         $ticket = $this->resource->update($ticketId, $params);
 
-        $location = $this->apiBaseUrl . 'Banner/' . $bannerId;
+        $location = $this->apiBaseUrl . 'Ticket/' . $ticketId;
         $data = [
-            'id' => $banner->getId(),
+            'id' => $ticket->getId(),
             'location' => $location,
         ];
 
