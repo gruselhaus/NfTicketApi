@@ -72,7 +72,7 @@ class Ticket extends Resource
         //returns the total count of the query
         $totalResult = $paginator->count();
 
-        //returns the Banner data
+        //returns the Ticket data
         $ticket = $paginator->getIterator()->getArrayCopy();
 
         return ['total' => $totalResult, 'data' => $ticket];
